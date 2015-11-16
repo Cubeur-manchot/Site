@@ -1,61 +1,110 @@
-body
+ul
 {
-	background-color:blue;
-}
-
-.accueil
-{
-	position:absolute;
-	float:right;
+	margin: 2px;
+	padding: 2px;
 }
 
 p
 {
-	color:black;
-	font-size:16px;
-	font-family:Verdana;
-	text-align:left;
+	margin-left: 3px;
+	font-family: "Comic sans MS";
+	text-align: left;
 }
 
-texte
+.test
 {
-	position:absolute;
-	background-color:white;
-	border:2px black solid;
-	margin-top:10px;
-	top:210px;
-	left:5px;
-	right:5px;
-	bottom:195px;
-}
-nav ul
-{
-	border:2px black solid;
-	color:black;
-	list-style-type: none;
-	font-size:16px;
-	font-family:Verdana;
-	position:absolute;
-	right:12.5%;
-	top:5px
-	display:inline;
-   padding:0;
-   margin:0;
+	display: block;
 }
 
-h5
+h1
 {
-	text-align:center;
-	color:black;
-	font-size:16px;
-	font-family:Verdana;
+	text-align: center;
+	color: blue;
 }
+
+.copyright
+{
+	text-align: center;
+	font-size: 0.5em;
+}
+
+footer
+{
+	background: url("separator.png") repeat-x top;
+}
+
+header
+{
+	display: inline-block;
+	text-align: center;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	border-bottom: 1px black solid;
+}
+
+li
+{
+	display: inline-block;
+}
+
+
+.menu
+{
+	display: inline-block;
+}
+
+body
+{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
 	
-.copyright /*bug chez moi avec chromium : la ligne tout en bas ne se positionne pas au milieu de l'écran. À vérifier avec d'autres navigateurs*/
-{
-	text-align:center;
-	color:white;
-	font-size:10px;
-	font-family:Verdana;
+	background-color: white;
+	border: 1px black solid;
 }
 
+
+nav
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.gradient {
+	/* Anciens navigateurs */
+	background: white url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Navigateurs r�cents */
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(white),
+		to(#3399cc)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -moz-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -o-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+}
