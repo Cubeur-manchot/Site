@@ -1,78 +1,5 @@
-ul
-{
-	margin: 2px;
-	padding: 2px;
-}
 
-p
-{
-	margin-left: 3px;
-	font-family: "Comic sans MS";
-	text-align: left;
-}
-
-.test
-{
-	display: block;
-}
-
-h1
-{
-	text-align: center;
-	color: blue;
-}
-
-.copyright
-{
-	text-align: center;
-	font-size: 0.5em;
-}
-
-footer
-{
-	background: url("separator.png") repeat-x top;
-}
-
-header
-{
-	display: inline-block;
-	text-align: center;
-	background-color: grey;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-	border-bottom: 1px black solid;
-}
-
-li
-{
-	display: inline-block;
-}
-
-
-.menu
-{
-	display: inline-block;
-}
-
-body
-{
-	width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-	
-	background-color: white;
-	border: 1px black solid;
-}
-
-
-nav
-{
-	margin: 0px;
-	padding: 0px;
-}
-
-
+/* Dégradé en Background */
 .gradient {
 	/* Anciens navigateurs */
 	background: white url("gradient-bg.png") repeat-x top;
@@ -107,4 +34,96 @@ nav
 		white,
 		#3399cc
 	);
+}
+
+
+.copyright
+{
+	text-align: center;
+	font-size: 0.5em;
+}
+
+/* [PROVISOIRE] Coloration du texte de présentation */
+#color
+{
+	color: blue;
+}
+
+
+header
+{
+	display: inline-block;
+	text-align: center;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	border-bottom: 1px black solid;
+}
+
+
+nav
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* Marge des boutons en haut */
+ul
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+
+/* Affichage en ligne des boutons du haut */
+li
+{
+	display: inline-block;
+}
+
+
+
+body
+{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	background-color: white;
+	border: 1px black solid;
+}
+
+
+p
+{
+	margin-left: 3px;
+	font-family:"Comic sans MS";
+	font-size: 0.85em;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+
+strong
+{
+	display: block;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+
+/* Ligne de séparation */
+footer
+{
+	background: url("images/separator.png") repeat-x top;
+}
+
+
+h1
+{
+	text-align: center;
+	color: blue;
 }
