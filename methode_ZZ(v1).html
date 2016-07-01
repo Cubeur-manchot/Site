@@ -75,7 +75,7 @@
                     <li>Après l'EOLine le cube peut être résolu en n'utilisant que des mouvements R,L et U</li>
                     <li>Pas besoin de rotations de cube</li>
                     <li>Un nombre de mouvement pour résoudre le cube bas (théoriquement 44 mouvements en utilisant les ZBLL)</li>
-                    <li>Un dernier étage pouvant être résolu en 1 fois à l'aide de "seulement" 494 algorithmes. </li>
+                    <li>Un dernier étage pouvant être résolu en une fois à l'aide de "seulement" 494 algorithmes. </li>
                 </ul><br/>
         
             <li><h3 id = "4">Inconvénients</h3></li>
@@ -108,24 +108,28 @@
             <tab>La face B peut être utilisée de la même manière que la face F pour orienter les arêtes.</tab><br/><br/>
             
             <strong><tab2>Finir la ligne</tab2></strong><br/><br/>
-            <tab>Enfin</tab> placer les arêtes DF et DB à l'aide de mouvements R, U, L, D, F2 et B2 afin de former une ligne.<br/>
+            <tab>Enfin</tab> placer les arêtes DF et DB à l'aide de mouvements R, U, L, D, F2 et B2 afin de former une ligne. Une bonne EOLine (Orientation des arêtes + Placement de la ligne ) se fait en moins de 9 mouvements. <br/>
+            
             
             <h3 id ="7">Étape 2 : Les ZZF2l</h3>
-            <tab>Ici</tab>, le but va être de construire deux blocks 1*2*3, un de chaque coté de la line afin de finir les deux premières couronnes du cube. Cette étape peut être comparée aux F2l de la méthode Fridrich/CFOP mais seul les mouvements R, U et L sont requis pour construire les blocks. De plus, les arêtes DL et DR n'étant pas encore placées la liberté de mouvement est plus grande qu'avec CFOP.<br/>
+            <tab>Ici</tab>, le but va être de construire deux blocks 1*2*3, un de chaque coté de la line afin de finir les deux premières couronnes du cube. Cette étape peut être comparée aux F2l de la méthode Fridrich/CFOP mais seul les mouvements R, U et L sont requis pour construire les blocks. De plus, les arêtes DL et DR n'étant pas encore placées la liberté de mouvement est plus grande qu'avec CFOP. Le meilleur moyen de progresser est de pratiquer, de jouer avec son cube pour trouver des manières plus efficaces de faire les ZZF2l.<br/>
             
             <h3 id = "8">Étape 3 : Le dernier étage</h3>
             
-            <tab>Il y a énormément de variantes pour terminer le cube, je ne parlerai ici que de 3.</tab>
+            <tab>Il y a énormément de variantes pour terminer le cube, je ne parlerai ici que de quelques unes :</tab>
             
             <ul>
-                <li><strong>OCLL + PLL :</strong> Les OCLL (7 algorithmes) orientent les coins du dernier étage, puis les PLL (21 algorithmes) permutent les pièces afin de terminer le dernier étage. Cette variante permet de résoudre le dernier étage en théoriquement 19,14 mouvement en moyenne à l'aide de seulement 28 algorithmes. De plus les PLL sont des algorithmes aussi utilisés dans la méthode CFOP</li><br/>
-                <li><strong>COLL + EPLL :</strong> Les COLL (42 algorithmes) orientent et permutent les coins du dernier étage, puis les EPLL (4 algorithmes) permutent les arêtes du dernier étage. La moyenne de mouvement avec cette méthode est de 18,53. Les EPLL sont des algorithmes très rapides à effectuer.</li><br/>
-                <li><strong>ZBLL :</strong> Les ZBLL (494 algorithmes) permettent de résoudre le dernier étage en une fois en très peu de mouvements (12,08). Il est possible de faire du "phasing" c'est à dire influencer la permutation des arêtes pendant les ZZF2l afin de réduire le nombre d'algorithmes à  167. Cette étape intuitive rajoute en moyenne 2 mouvement à la résolution, c'est une autre variante nommée ZZ-b.</li><br/>
+                <li><strong><a href ="#">OCLL</a> + <a href ="#">PLL</a> :</strong> Les OCLL (7 algorithmes) orientent les coins du dernier étage, puis les PLL (21 algorithmes) permutent les pièces afin de terminer le dernier étage. Cette variante permet de résoudre le dernier étage en théoriquement 19,14 mouvement en moyenne à l'aide de seulement 28 algorithmes. De plus les PLL sont des algorithmes aussi utilisés dans la méthode CFOP. IL est possible de faire du "phasing" c'est à dire influencer la permutation des arêtes pendant les ZZF2l afin de réduire le nombre d'algorithmes à 16 ( 7 <a href="#">OLC</a> et 9 PLL), cette étape intuitive rajoute en moyenne 3 mouvement à la résolution, c'est la variante ZZ-reduction (ZZ-r)</li><br/>
+                <li><strong><a href="#">WV</a> + <a href="#">PLL</a> :</strong> Les algorithmes de Winter Variation (27 algorithmes) orientent les coins du dernier étage pendant l'insertion de la dernière paire de ZZF2l. Cette variante utilise moins de mouvement que celle avec les OCLL et les PLL mais le repérage est plus compliqué.</li><br/>
+                <li><strong><a href ="#">COLL</a> + <a href ="#">EPLL</a> :</strong> Les COLL (42 algorithmes) orientent et permutent les coins du dernier étage, puis les EPLL (4 algorithmes) permutent les arêtes du dernier étage. La moyenne de mouvement avec cette méthode est de 18,53. Les EPLL sont des algorithmes très rapides à effectuer.</li><br/>
+                <li><strong><a href ="#">ZBLL</a> :</strong> Les ZBLL (494 algorithmes) permettent de résoudre le dernier étage en une fois en très peu de mouvements (12,08). Comme pour ZZ-r, il est possible de "phaser" les arêtes afin de réduire le nombre d'algorithmes à  167, c'est une autre variante nommée ZZ-b.</li><br/>
+                <li><strong><a href="#">ZZ-blah</a></strong> : Cette variante demande lors de l'insertion de la dernière paire de ZZF2l de désorienter les coins de manière algorithmique (17 algorithmes, en moyenne 6 mouvements) afin de réduire le nombre de ZBLL requis à 133 pour résoudre le dernier étage en une fois. Le repérage des cas est très rapide, mais le nombre de mouvements requis pour le dernier étage est élevé</li>
             </ul>
             
             <h3 id = "9">Exemple de résolution</h3>
             
-                    <strong>Scramble :</strong> B2 L' U D2 R2 U F' R L2 D' L2 U2 L2 U L2 B2 R2 B2 R<br/><br/>       
+                    <strong>Scramble :</strong> B2 L' U D2 R2 U F' R L2 D' L2 U2 L2 U L2 B2 R2 B2 R<br/><br/>
+                    <a href ="https://alg.cubing.net/?setup=B2_L-_U_D2_R2_U_F-_R_L2_D-_L2_U2_L2_U_L2_B2_R2_B2_R&alg=L_D_F_L2_R_D-_%2F%2FEOLine%0AU2_R2_U-_R_%2F%2F_Block_2*2*1_%C3%A0_droite_%0AU2_L2_U-_L_U-_L2_U2_%2F%2FBlock_2*2*1_%C3%A0_gauche_%0AL2_U2_L_U2_L-_U_L__%2F%2FBlock_3*3*1_%C3%A0_gauche%0AU_R_U_R-_U-_R_U2_R-_U-_R_%2F%2FBlock_3*3*1_%C3%A0_droite">Voir l'exemple de résolution sur alg.cubing</a><br/>
                     L D F L2 R D' <strong>//EOLine (6 mouvements)</strong> <br/>
                     U2 R2 U' R  <strong>// Block 2*2*1 à droite (4 mouvements)</strong><br/>
                     U2 L2 U' L U' L2 U2<strong> //Block 2*2*1 à gauche (7 mouvements)</strong> <br/>
@@ -134,11 +138,14 @@
                     Puis selon la variante utilisée :
             
                     <ul>
-                        <li>U2 F' r U R' U' r' F R <strong>//OCLL (9 mouvements)</strong><br/>
+                        <li><a href="https://alg.cubing.net/?setup=B2_L-_U_D2_R2_U_F-_R_L2_D-_L2_U2_L2_U_L2_B2_R2_B2_R&alg=L_D_F_L2_R_D-_%2F%2FEOLine%0AU2_R2_U-_R_%2F%2F_Block_2*2*1_%C3%A0_droite_%0AU2_L2_U-_L_U-_L2_U2_%2F%2FBlock_2*2*1_%C3%A0_gauche_%0AL2_U2_L_U2_L-_U_L__%2F%2FBlock_3*3*1_%C3%A0_gauche%0AU_R_U_R-_U-_R_U2_R-_U-_R_%2F%2FBlock_3*3*1_%C3%A0_droite%0A%0AU2_F-_r_U_R-_U-_r-_F_R_%2F%2FOCLL_%0AU2_F_R_U-_R-_U-_R_U_R-_F-_R_U_R-_U-_R-_F_R_F-_U2_%2F%2FPLL">Exemple de dernier étage avec la variante OCLL + PLL :</a><br/>
+                            U2 F' r U R' U' r' F R <strong>//OCLL (9 mouvements)</strong><br/>
                             U2 F R U' R' U' R U R' F' R U R' U' R' F R F' U2 <strong>//PLL (19 mouvements, soit 62 mouvements en tout)</strong></li><br/>
-                        <li>U' L U2 L D L' U2 L D' L2 <strong>//COLL (10 mouvements)</strong><br/>
+                        <li><a href="https://alg.cubing.net/?setup=B2_L-_U_D2_R2_U_F-_R_L2_D-_L2_U2_L2_U_L2_B2_R2_B2_R&alg=L_D_F_L2_R_D-_%2F%2FEOLine%0AU2_R2_U-_R_%2F%2F_Block_2*2*1_%C3%A0_droite_%0AU2_L2_U-_L_U-_L2_U2_%2F%2FBlock_2*2*1_%C3%A0_gauche_%0AL2_U2_L_U2_L-_U_L__%2F%2FBlock_3*3*1_%C3%A0_gauche%0AU_R_U_R-_U-_R_U2_R-_U-_R_%2F%2FBlock_3*3*1_%C3%A0_droite%0A%0AU-_L_U2_L_D_L-_U2_L_D-_L2_%2F%2FCOLL%0AM2_U_M-_U2_M_U_M2_%2F%2FEPLL">Exemple de dernier étage avec la variante COLL + EPLL :</a><br/>
+                            U' L U2 L D L' U2 L D' L2 <strong>//COLL (10 mouvements)</strong><br/>
                             M2 U M' U2 M U M2 <strong>//EPLL (7 mouvements, soit 51 mouvements en tout)</strong></li><br/>
-                        <li>L U2 L' U' L2 D L' U' L D' L2 U <strong>//ZBLL (12 mouvements, soit 46 mouvements en tout)</strong></li><br/>
+                        <li><a href="https://alg.cubing.net/?setup=B2_L-_U_D2_R2_U_F-_R_L2_D-_L2_U2_L2_U_L2_B2_R2_B2_R&alg=L_D_F_L2_R_D-_%2F%2FEOLine%0AU2_R2_U-_R_%2F%2F_Block_2*2*1_%C3%A0_droite_%0AU2_L2_U-_L_U-_L2_U2_%2F%2FBlock_2*2*1_%C3%A0_gauche_%0AL2_U2_L_U2_L-_U_L__%2F%2FBlock_3*3*1_%C3%A0_gauche%0AU_R_U_R-_U-_R_U2_R-_U-_R_%2F%2FBlock_3*3*1_%C3%A0_droite%0A%0AL_U2_L-_U-_L2_D_L-_U-_L_D-_L2_U_%2F%2FZBLL">Exemple de dernier étage avec la variante ZBLL :</a><br/>
+                        L U2 L' U' L2 D L' U' L D' L2 U <strong>//ZBLL (12 mouvements, soit 46 mouvements en tout)</strong></li><br/>
                     </ul>
             
     </body>
